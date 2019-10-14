@@ -1,0 +1,23 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
+  "hexo": {
+    "version": "3.9.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "hexo": "^3.9.0",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-html-minifier": "^1.0.0",
+    "hexo-renderer-ejs": "^0.3.1",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-server": "^0.3.3"
+  }
+}

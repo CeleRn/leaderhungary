@@ -1,0 +1,37 @@
+.prices {
+    padding-bottom: 80px;
+    .table {
+        th[scope="col"] {
+            &:first-child, &:nth-child(4) {
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+        th[scope="row"] {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+        tbody tr td {
+            &:nth-child(4) {
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+        ul {
+            @include media-breakpoint-down(sm) {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+.table-title {
+    color: #ffffff;
+    background-color: rgba($main-color, .85);
+    padding: 5px 15px;
+    font-size: 24px;
+    margin-top: 50px;
+}

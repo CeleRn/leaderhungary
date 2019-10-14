@@ -1,0 +1,120 @@
+.contacts {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    &__title {
+        flex-basis: 100%;
+    }
+    &__contacts {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        font-weight: 300;
+        color: #333333;
+        @include media-breakpoint-down(md) {
+            font-size: 22px;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-basis: 100%;
+            padding-bottom: 50px;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 20px;
+        }
+    }
+    &__title-item {
+        @include media-breakpoint-down(md) {
+            font-size: 19px;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 17px;
+        }
+    }
+    &__address {
+        margin-bottom: 20px;
+
+    }
+    &__phone {
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    &__mail {
+        margin-bottom: 20px;
+        color: #333333;
+        &:hover, &:focus {
+            color: #000000;
+        }
+    }
+    &__map {
+        flex-basis: 50%;
+        padding-bottom: 80px;
+        @include media-breakpoint-down(sm) {
+            flex-basis: 100%;
+            padding-bottom: 50px;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    }
+    &__form {
+        padding: 50px 0;
+        background-color: rgba($main-color, 0.75);
+    }
+}
+
+.contacts-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // align-items: center;
+    &__title {
+        // flex-basis: 100%;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 35px;
+        @include media-breakpoint-down(sm) {
+            font-size: 25px;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 22px;
+        }
+    }
+    .form-group {
+        // flex-basis: 100%;
+        label {
+            font-weight: 300;
+            color: #ffffff;
+            margin-bottom: 0.25rem;
+        }
+    }
+    .form-control {
+        border-radius: 0;
+        border: 1px solid #fff;
+    }
+    &__submit {
+        // display: inline-block;
+        margin-top: 35px;
+        align-self: center;
+        display: inline-block;
+        background-color: rgba(255,255,255, 0.05);
+        border: 2px solid rgba(255,255,255, 0.75);
+        padding: 10px 30px;
+        border-radius: 28.5px;
+        text-transform: uppercase;
+        color: rgba(255,255,255, 0.75);
+        font-size: 20px;
+        font-weight: 700;
+        transition: all .2s ease-in-out;
+        &:hover, &:focus {
+            color: $main-color;
+            background-color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}

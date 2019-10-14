@@ -1,0 +1,90 @@
+.wrapper {
+  background: #F6F6F6 url('/assets/images/back.png') 50% 0 no-repeat;
+  min-height: 500px;
+}
+
+// @import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+// @import "~bootstrap/scss/buttons";
+// @import "~bootstrap/scss/transitions";
+// @import "~bootstrap/scss/dropdown";
+// @import "~bootstrap/scss/button-group";
+// @import "~bootstrap/scss/input-group";
+// @import "~bootstrap/scss/custom-forms";
+// @import "~bootstrap/scss/nav";
+// @import "~bootstrap/scss/navbar";
+// @import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/breadcrumb";
+// @import "~bootstrap/scss/pagination";
+// @import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/jumbotron";
+// @import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+// @import "~bootstrap/scss/media";
+// @import "~bootstrap/scss/list-group";
+// @import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/toasts";
+// @import "~bootstrap/scss/modal";
+// @import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel";
+// @import "~bootstrap/scss/spinners";
+// @import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/print";
+
+
+
+$main-color: #EE3825;
+
+@import './partials/header.scss';
+@import './partials/footer.scss';
+@import './partials/home.scss';
+@import './partials/whywe.scss';
+@import './partials/prices.scss';
+@import './partials/contacts.scss';
+@import './partials/legal.scss';
+
+
+
+.main-title {
+  flex-basis: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 24px;
+  }
+}
+
+.main-description {
+    font-size: 23px;
+    color: #333333;
+    padding-bottom: 70px;
+    font-weight: 300;
+    @include media-breakpoint-down(md) {
+      font-size: 21px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+}

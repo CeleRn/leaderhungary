@@ -1,0 +1,40 @@
+<div class="contacts">
+    <div class="container">
+        <h1 class="main-title">Contact information</h1>
+        <div class="contacts__contacts">
+            <h3 class="contacts__title-item">Address:</h3>
+            <address class="contacts__address">1054 Budapest, Honved utca, 8</address>
+            <h3 class="contacts__title-item">Phone:</h3>
+            <span class="contacts__phone">+36&nbsp;3&nbsp;09999706</span>
+            <h3 class="contacts__title-item">Email:</h3>
+            <a class="contacts__mail" href="mailto:info@leaderhungary.com">info@leaderhungary.com</a>
+        </div>
+        <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1905.76263144766!2d19.04851457771264!3d47.50636553472969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc13d089988b%3A0x6a8f3af3d19fc3df!2zQnVkYXBlc3QsIEhvbnbDqWQgdS4gOCwgMTA1NCDQktC10L3Qs9GA0LjRjw!5e0!3m2!1sru!2sru!4v1571005016300!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <div class="contacts__form" id="order">
+        <div class="container">
+            <form  name="contact" method="POST" data-netlify="true" class="contacts-form">
+                <h2 class="contacts-form__title">Fill out the form and we will contact you</h2>
+                <div class="form-group">
+                    <label for="clientName">You name</label>
+                    <input type="text" class="form-control" id="clientName" name="clientName" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="clientEmail">Email address</label>
+                    <input type="email" class="form-control" id="clientEmail" name="clientEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="clientPhone">Phone number</label>
+                    <input type="text" class="form-control" id="clientPhone" name="clientPhone" placeholder="Enter phone">
+                </div>
+                <div class="form-group">
+                    <label for="clientMessage">Your message</label>
+                    <textarea class="form-control" id="clientMessage" name="clientMessage" rows="3"></textarea>
+                </div>
+                <button type="submit" class="contacts-form__submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

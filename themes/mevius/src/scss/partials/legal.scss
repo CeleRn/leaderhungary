@@ -1,0 +1,60 @@
+.legal-doc-body {
+    p {
+        min-height: 35px;
+    }
+    .text-left {
+        float: left;
+    }
+    .text-right {
+        float: right;
+    }
+}
+
+.legal {
+    &__text {
+        a {
+            color: #292b2c;
+            text-decoration: underline;
+        }
+        ol {
+            padding-left: 0;
+            list-style: none;
+            counter-reset: c;
+            > li {
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-top: 25px;
+                font-size: 1.2rem;
+                text-align: left
+            }
+            ol {
+                padding-left: 20px;
+                margin-top: 15px;
+                @include media-breakpoint-down(md) {
+                    padding-left: 0;
+                }
+                li {
+                    text-transform: none;
+                    font-weight: 400;
+                    margin-top: 10px;
+                    font-size: 1rem;
+                    ;
+                }
+            }
+        }
+        li {
+            &:before {
+                counter-increment: c;
+                content: counters(c, ".") ". ";
+                margin-right: 5px;
+            }
+        }
+        .dont-uppercase + ol {
+            li {
+                text-transform: none;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+    }
+}
